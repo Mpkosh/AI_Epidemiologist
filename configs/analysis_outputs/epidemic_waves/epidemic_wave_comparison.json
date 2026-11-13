@@ -1,0 +1,921 @@
+{
+  "series_name": "inc_per_10k",
+  "series_label_ru": "заболеваемость на 10 тыс. населения",
+  "comparison_mode": "three_last_seasons",
+  "season_definition": "ISO weeks 40..39",
+  "smoothing": {
+    "method": "centered_rolling_mean",
+    "window_weeks": 3
+  },
+  "width_definition": "FWHM-like on smoothed weekly curve",
+  "season_labels": [
+    "2024-2025",
+    "2025-2026",
+    "2026-2027"
+  ],
+  "latest_wave_status": "right_censored",
+  "waves": [
+    {
+      "season_start_year": 2024,
+      "season_label": "2024-2025",
+      "wave_status": "complete",
+      "observed_until": "2025-09-22",
+      "n_observed_weeks": 52,
+      "peak_week": 12,
+      "peak_date": "2025-03-17",
+      "peak_value": 26.634,
+      "half_height_value": 13.317,
+      "left_half_cross_pos": 19.231,
+      "right_half_cross_pos": 28.811,
+      "fwhm_weeks": 9.58,
+      "fwhm_lower_bound_weeks": null,
+      "left_span_weeks": 5.769,
+      "right_span_weeks": 3.811,
+      "asymmetry_ratio": 0.661,
+      "season_area": 281.232,
+      "rise_slope_half_to_peak": 2.308,
+      "fall_slope_peak_to_half": 3.494,
+      "secondary_peak_ratio": 0.787,
+      "plot_points": [
+        {
+          "week": 40,
+          "pos": 0.0,
+          "date": "2024-09-30",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 41,
+          "pos": 1.0,
+          "date": "2024-10-07",
+          "value_raw": 0.0,
+          "value_smooth": 0.199
+        },
+        {
+          "week": 42,
+          "pos": 2.0,
+          "date": "2024-10-14",
+          "value_raw": 0.596,
+          "value_smooth": 0.199
+        },
+        {
+          "week": 43,
+          "pos": 3.0,
+          "date": "2024-10-21",
+          "value_raw": 0.0,
+          "value_smooth": 0.376
+        },
+        {
+          "week": 44,
+          "pos": 4.0,
+          "date": "2024-10-28",
+          "value_raw": 0.532,
+          "value_smooth": 0.177
+        },
+        {
+          "week": 45,
+          "pos": 5.0,
+          "date": "2024-11-04",
+          "value_raw": 0.0,
+          "value_smooth": 0.177
+        },
+        {
+          "week": 46,
+          "pos": 6.0,
+          "date": "2024-11-11",
+          "value_raw": 0.0,
+          "value_smooth": 1.047
+        },
+        {
+          "week": 47,
+          "pos": 7.0,
+          "date": "2024-11-18",
+          "value_raw": 3.141,
+          "value_smooth": 1.047
+        },
+        {
+          "week": 48,
+          "pos": 8.0,
+          "date": "2024-11-25",
+          "value_raw": 0.0,
+          "value_smooth": 1.255
+        },
+        {
+          "week": 49,
+          "pos": 9.0,
+          "date": "2024-12-02",
+          "value_raw": 0.623,
+          "value_smooth": 0.208
+        },
+        {
+          "week": 50,
+          "pos": 10.0,
+          "date": "2024-12-09",
+          "value_raw": 0.0,
+          "value_smooth": 0.405
+        },
+        {
+          "week": 51,
+          "pos": 11.0,
+          "date": "2024-12-16",
+          "value_raw": 0.593,
+          "value_smooth": 0.846
+        },
+        {
+          "week": 52,
+          "pos": 12.0,
+          "date": "2024-12-23",
+          "value_raw": 1.946,
+          "value_smooth": 1.549
+        },
+        {
+          "week": 1,
+          "pos": 14.0,
+          "date": "2024-12-30",
+          "value_raw": 2.107,
+          "value_smooth": 2.79
+        },
+        {
+          "week": 2,
+          "pos": 15.0,
+          "date": "2025-01-06",
+          "value_raw": 4.318,
+          "value_smooth": 3.39
+        },
+        {
+          "week": 3,
+          "pos": 16.0,
+          "date": "2025-01-13",
+          "value_raw": 3.744,
+          "value_smooth": 5.806
+        },
+        {
+          "week": 4,
+          "pos": 17.0,
+          "date": "2025-01-20",
+          "value_raw": 9.356,
+          "value_smooth": 7.143
+        },
+        {
+          "week": 5,
+          "pos": 18.0,
+          "date": "2025-01-27",
+          "value_raw": 8.33,
+          "value_smooth": 8.799
+        },
+        {
+          "week": 6,
+          "pos": 19.0,
+          "date": "2025-02-03",
+          "value_raw": 8.712,
+          "value_smooth": 11.985
+        },
+        {
+          "week": 7,
+          "pos": 20.0,
+          "date": "2025-02-10",
+          "value_raw": 18.911,
+          "value_smooth": 17.755
+        },
+        {
+          "week": 8,
+          "pos": 21.0,
+          "date": "2025-02-17",
+          "value_raw": 25.642,
+          "value_smooth": 20.954
+        },
+        {
+          "week": 9,
+          "pos": 22.0,
+          "date": "2025-02-24",
+          "value_raw": 18.307,
+          "value_smooth": 20.652
+        },
+        {
+          "week": 10,
+          "pos": 23.0,
+          "date": "2025-03-03",
+          "value_raw": 18.007,
+          "value_smooth": 18.872
+        },
+        {
+          "week": 11,
+          "pos": 24.0,
+          "date": "2025-03-10",
+          "value_raw": 20.301,
+          "value_smooth": 23.431
+        },
+        {
+          "week": 12,
+          "pos": 25.0,
+          "date": "2025-03-17",
+          "value_raw": 31.984,
+          "value_smooth": 26.634
+        },
+        {
+          "week": 13,
+          "pos": 26.0,
+          "date": "2025-03-24",
+          "value_raw": 27.618,
+          "value_smooth": 26.603
+        },
+        {
+          "week": 14,
+          "pos": 27.0,
+          "date": "2025-03-31",
+          "value_raw": 20.208,
+          "value_smooth": 21.894
+        },
+        {
+          "week": 15,
+          "pos": 28.0,
+          "date": "2025-04-07",
+          "value_raw": 17.855,
+          "value_smooth": 16.778
+        },
+        {
+          "week": 16,
+          "pos": 29.0,
+          "date": "2025-04-14",
+          "value_raw": 12.271,
+          "value_smooth": 12.51
+        },
+        {
+          "week": 17,
+          "pos": 30.0,
+          "date": "2025-04-21",
+          "value_raw": 7.405,
+          "value_smooth": 8.689
+        },
+        {
+          "week": 18,
+          "pos": 31.0,
+          "date": "2025-04-28",
+          "value_raw": 6.39,
+          "value_smooth": 6.155
+        },
+        {
+          "week": 19,
+          "pos": 32.0,
+          "date": "2025-05-05",
+          "value_raw": 4.672,
+          "value_smooth": 4.929
+        },
+        {
+          "week": 20,
+          "pos": 33.0,
+          "date": "2025-05-12",
+          "value_raw": 3.725,
+          "value_smooth": 3.248
+        },
+        {
+          "week": 21,
+          "pos": 34.0,
+          "date": "2025-05-19",
+          "value_raw": 1.349,
+          "value_smooth": 2.083
+        },
+        {
+          "week": 22,
+          "pos": 35.0,
+          "date": "2025-05-26",
+          "value_raw": 1.175,
+          "value_smooth": 0.963
+        },
+        {
+          "week": 23,
+          "pos": 36.0,
+          "date": "2025-06-02",
+          "value_raw": 0.366,
+          "value_smooth": 0.514
+        },
+        {
+          "week": 24,
+          "pos": 37.0,
+          "date": "2025-06-09",
+          "value_raw": 0.0,
+          "value_smooth": 0.172
+        },
+        {
+          "week": 25,
+          "pos": 38.0,
+          "date": "2025-06-16",
+          "value_raw": 0.15,
+          "value_smooth": 0.05
+        },
+        {
+          "week": 26,
+          "pos": 39.0,
+          "date": "2025-06-23",
+          "value_raw": 0.0,
+          "value_smooth": 0.05
+        },
+        {
+          "week": 27,
+          "pos": 40.0,
+          "date": "2025-06-30",
+          "value_raw": 0.0,
+          "value_smooth": 0.064
+        },
+        {
+          "week": 28,
+          "pos": 41.0,
+          "date": "2025-07-07",
+          "value_raw": 0.193,
+          "value_smooth": 0.064
+        },
+        {
+          "week": 29,
+          "pos": 42.0,
+          "date": "2025-07-14",
+          "value_raw": 0.0,
+          "value_smooth": 0.064
+        },
+        {
+          "week": 30,
+          "pos": 43.0,
+          "date": "2025-07-21",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 31,
+          "pos": 44.0,
+          "date": "2025-07-28",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 32,
+          "pos": 45.0,
+          "date": "2025-08-04",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 33,
+          "pos": 46.0,
+          "date": "2025-08-11",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 34,
+          "pos": 47.0,
+          "date": "2025-08-18",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 35,
+          "pos": 48.0,
+          "date": "2025-08-25",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 36,
+          "pos": 49.0,
+          "date": "2025-09-01",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 37,
+          "pos": 50.0,
+          "date": "2025-09-08",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 38,
+          "pos": 51.0,
+          "date": "2025-09-15",
+          "value_raw": 0.0,
+          "value_smooth": 0.234
+        },
+        {
+          "week": 39,
+          "pos": 52.0,
+          "date": "2025-09-22",
+          "value_raw": 0.702,
+          "value_smooth": 0.351
+        }
+      ]
+    },
+    {
+      "season_start_year": 2025,
+      "season_label": "2025-2026",
+      "wave_status": "complete",
+      "observed_until": "2026-09-21",
+      "n_observed_weeks": 52,
+      "peak_week": 51,
+      "peak_date": "2025-12-15",
+      "peak_value": 34.778,
+      "half_height_value": 17.389,
+      "left_half_cross_pos": 8.566,
+      "right_half_cross_pos": 13.773,
+      "fwhm_weeks": 5.207,
+      "fwhm_lower_bound_weeks": null,
+      "left_span_weeks": 2.434,
+      "right_span_weeks": 2.773,
+      "asymmetry_ratio": 1.139,
+      "season_area": 248.855,
+      "rise_slope_half_to_peak": 7.144,
+      "fall_slope_peak_to_half": 6.271,
+      "secondary_peak_ratio": 0.25,
+      "plot_points": [
+        {
+          "week": 40,
+          "pos": 0.0,
+          "date": "2025-09-29",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 41,
+          "pos": 1.0,
+          "date": "2025-10-06",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 42,
+          "pos": 2.0,
+          "date": "2025-10-13",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 43,
+          "pos": 3.0,
+          "date": "2025-10-20",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 44,
+          "pos": 4.0,
+          "date": "2025-10-27",
+          "value_raw": 0.0,
+          "value_smooth": 0.114
+        },
+        {
+          "week": 45,
+          "pos": 5.0,
+          "date": "2025-11-03",
+          "value_raw": 0.341,
+          "value_smooth": 1.599
+        },
+        {
+          "week": 46,
+          "pos": 6.0,
+          "date": "2025-11-10",
+          "value_raw": 4.455,
+          "value_smooth": 2.711
+        },
+        {
+          "week": 47,
+          "pos": 7.0,
+          "date": "2025-11-17",
+          "value_raw": 3.337,
+          "value_smooth": 6.319
+        },
+        {
+          "week": 48,
+          "pos": 8.0,
+          "date": "2025-11-24",
+          "value_raw": 11.163,
+          "value_smooth": 12.231
+        },
+        {
+          "week": 49,
+          "pos": 9.0,
+          "date": "2025-12-01",
+          "value_raw": 22.193,
+          "value_smooth": 21.345
+        },
+        {
+          "week": 50,
+          "pos": 10.0,
+          "date": "2025-12-08",
+          "value_raw": 30.68,
+          "value_smooth": 32.339
+        },
+        {
+          "week": 51,
+          "pos": 11.0,
+          "date": "2025-12-15",
+          "value_raw": 44.143,
+          "value_smooth": 34.778
+        },
+        {
+          "week": 52,
+          "pos": 12.0,
+          "date": "2025-12-22",
+          "value_raw": 29.512,
+          "value_smooth": 29.713
+        },
+        {
+          "week": 1,
+          "pos": 14.0,
+          "date": "2025-12-29",
+          "value_raw": 15.485,
+          "value_smooth": 15.814
+        },
+        {
+          "week": 2,
+          "pos": 15.0,
+          "date": "2026-01-05",
+          "value_raw": 2.446,
+          "value_smooth": 10.635
+        },
+        {
+          "week": 3,
+          "pos": 16.0,
+          "date": "2026-01-12",
+          "value_raw": 13.975,
+          "value_smooth": 8.17
+        },
+        {
+          "week": 4,
+          "pos": 17.0,
+          "date": "2026-01-19",
+          "value_raw": 8.089,
+          "value_smooth": 8.678
+        },
+        {
+          "week": 5,
+          "pos": 18.0,
+          "date": "2026-01-26",
+          "value_raw": 3.971,
+          "value_smooth": 5.491
+        },
+        {
+          "week": 6,
+          "pos": 19.0,
+          "date": "2026-02-02",
+          "value_raw": 4.414,
+          "value_smooth": 5.191
+        },
+        {
+          "week": 7,
+          "pos": 20.0,
+          "date": "2026-02-09",
+          "value_raw": 7.187,
+          "value_smooth": 6.708
+        },
+        {
+          "week": 8,
+          "pos": 21.0,
+          "date": "2026-02-16",
+          "value_raw": 8.523,
+          "value_smooth": 6.847
+        },
+        {
+          "week": 9,
+          "pos": 22.0,
+          "date": "2026-02-23",
+          "value_raw": 4.831,
+          "value_smooth": 6.406
+        },
+        {
+          "week": 10,
+          "pos": 23.0,
+          "date": "2026-03-02",
+          "value_raw": 5.863,
+          "value_smooth": 4.931
+        },
+        {
+          "week": 11,
+          "pos": 24.0,
+          "date": "2026-03-09",
+          "value_raw": 4.1,
+          "value_smooth": 4.515
+        },
+        {
+          "week": 12,
+          "pos": 25.0,
+          "date": "2026-03-16",
+          "value_raw": 3.582,
+          "value_smooth": 3.202
+        },
+        {
+          "week": 13,
+          "pos": 26.0,
+          "date": "2026-03-23",
+          "value_raw": 1.924,
+          "value_smooth": 2.45
+        },
+        {
+          "week": 14,
+          "pos": 27.0,
+          "date": "2026-03-30",
+          "value_raw": 1.845,
+          "value_smooth": 2.072
+        },
+        {
+          "week": 15,
+          "pos": 28.0,
+          "date": "2026-04-06",
+          "value_raw": 2.446,
+          "value_smooth": 2.31
+        },
+        {
+          "week": 16,
+          "pos": 29.0,
+          "date": "2026-04-13",
+          "value_raw": 2.639,
+          "value_smooth": 2.198
+        },
+        {
+          "week": 17,
+          "pos": 30.0,
+          "date": "2026-04-20",
+          "value_raw": 1.51,
+          "value_smooth": 3.485
+        },
+        {
+          "week": 18,
+          "pos": 31.0,
+          "date": "2026-04-27",
+          "value_raw": 6.306,
+          "value_smooth": 2.605
+        },
+        {
+          "week": 19,
+          "pos": 32.0,
+          "date": "2026-05-04",
+          "value_raw": 0.0,
+          "value_smooth": 2.557
+        },
+        {
+          "week": 20,
+          "pos": 33.0,
+          "date": "2026-05-11",
+          "value_raw": 1.365,
+          "value_smooth": 0.585
+        },
+        {
+          "week": 21,
+          "pos": 34.0,
+          "date": "2026-05-18",
+          "value_raw": 0.391,
+          "value_smooth": 0.714
+        },
+        {
+          "week": 22,
+          "pos": 35.0,
+          "date": "2026-05-25",
+          "value_raw": 0.386,
+          "value_smooth": 0.314
+        },
+        {
+          "week": 23,
+          "pos": 36.0,
+          "date": "2026-06-01",
+          "value_raw": 0.166,
+          "value_smooth": 0.272
+        },
+        {
+          "week": 24,
+          "pos": 37.0,
+          "date": "2026-06-08",
+          "value_raw": 0.263,
+          "value_smooth": 0.324
+        },
+        {
+          "week": 25,
+          "pos": 38.0,
+          "date": "2026-06-15",
+          "value_raw": 0.543,
+          "value_smooth": 0.269
+        },
+        {
+          "week": 26,
+          "pos": 39.0,
+          "date": "2026-06-22",
+          "value_raw": 0.0,
+          "value_smooth": 0.181
+        },
+        {
+          "week": 27,
+          "pos": 40.0,
+          "date": "2026-06-29",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 28,
+          "pos": 41.0,
+          "date": "2026-07-06",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 29,
+          "pos": 42.0,
+          "date": "2026-07-13",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 30,
+          "pos": 43.0,
+          "date": "2026-07-20",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 31,
+          "pos": 44.0,
+          "date": "2026-07-27",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 32,
+          "pos": 45.0,
+          "date": "2026-08-03",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 33,
+          "pos": 46.0,
+          "date": "2026-08-10",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        },
+        {
+          "week": 34,
+          "pos": 47.0,
+          "date": "2026-08-17",
+          "value_raw": 0.0,
+          "value_smooth": 0.063
+        },
+        {
+          "week": 35,
+          "pos": 48.0,
+          "date": "2026-08-24",
+          "value_raw": 0.189,
+          "value_smooth": 0.155
+        },
+        {
+          "week": 36,
+          "pos": 49.0,
+          "date": "2026-08-31",
+          "value_raw": 0.275,
+          "value_smooth": 0.261
+        },
+        {
+          "week": 37,
+          "pos": 50.0,
+          "date": "2026-09-07",
+          "value_raw": 0.318,
+          "value_smooth": 0.198
+        },
+        {
+          "week": 38,
+          "pos": 51.0,
+          "date": "2026-09-14",
+          "value_raw": 0.0,
+          "value_smooth": 0.106
+        },
+        {
+          "week": 39,
+          "pos": 52.0,
+          "date": "2026-09-21",
+          "value_raw": 0.0,
+          "value_smooth": 0.0
+        }
+      ]
+    },
+    {
+      "season_start_year": 2026,
+      "season_label": "2026-2027",
+      "wave_status": "right_censored",
+      "observed_until": "2026-11-02",
+      "n_observed_weeks": 6,
+      "peak_week": 45,
+      "peak_date": "2026-11-02",
+      "peak_value": 0.33,
+      "half_height_value": 0.165,
+      "left_half_cross_pos": 3.559,
+      "right_half_cross_pos": null,
+      "fwhm_weeks": null,
+      "fwhm_lower_bound_weeks": 1.441,
+      "left_span_weeks": 1.441,
+      "right_span_weeks": null,
+      "asymmetry_ratio": null,
+      "season_area": 1.118,
+      "rise_slope_half_to_peak": 0.114,
+      "fall_slope_peak_to_half": null,
+      "secondary_peak_ratio": 0.464,
+      "plot_points": [
+        {
+          "week": 40,
+          "pos": 0.0,
+          "date": "2026-09-28",
+          "value_raw": 0.0,
+          "value_smooth": 0.23
+        },
+        {
+          "week": 41,
+          "pos": 1.0,
+          "date": "2026-10-05",
+          "value_raw": 0.459,
+          "value_smooth": 0.153
+        },
+        {
+          "week": 42,
+          "pos": 2.0,
+          "date": "2026-10-12",
+          "value_raw": 0.0,
+          "value_smooth": 0.153
+        },
+        {
+          "week": 43,
+          "pos": 3.0,
+          "date": "2026-10-19",
+          "value_raw": 0.0,
+          "value_smooth": 0.095
+        },
+        {
+          "week": 44,
+          "pos": 4.0,
+          "date": "2026-10-26",
+          "value_raw": 0.286,
+          "value_smooth": 0.22
+        },
+        {
+          "week": 45,
+          "pos": 5.0,
+          "date": "2026-11-02",
+          "value_raw": 0.373,
+          "value_smooth": 0.33
+        }
+      ]
+    }
+  ],
+  "peak_ranking": [
+    {
+      "season_label": "2025-2026",
+      "peak_value": 34.778
+    },
+    {
+      "season_label": "2024-2025",
+      "peak_value": 26.634
+    },
+    {
+      "season_label": "2026-2027",
+      "peak_value": 0.33
+    }
+  ],
+  "width_ranking_complete": [
+    {
+      "season_label": "2024-2025",
+      "fwhm_weeks": 9.58
+    },
+    {
+      "season_label": "2025-2026",
+      "fwhm_weeks": 5.207
+    }
+  ],
+  "latest_vs_previous": [
+    {
+      "latest_season": "2026-2027",
+      "previous_season": "2024-2025",
+      "peak_diff_abs": -26.304,
+      "peak_diff_pct": -98.8,
+      "peak_week_diff": 33,
+      "season_area_diff_pct": -99.6,
+      "width_diff_weeks": null,
+      "latest_width_censored": true
+    },
+    {
+      "latest_season": "2026-2027",
+      "previous_season": "2025-2026",
+      "peak_diff_abs": -34.448,
+      "peak_diff_pct": -99.1,
+      "peak_week_diff": -6,
+      "season_area_diff_pct": -99.6,
+      "width_diff_weeks": null,
+      "latest_width_censored": true
+    }
+  ],
+  "allowed_claims": [
+    "peak height comparison",
+    "peak timing comparison",
+    "FWHM width comparison when complete",
+    "right-censored width caveat for incomplete latest season",
+    "asymmetry comparison when complete",
+    "season burden comparison"
+  ],
+  "forbidden_claims": [
+    "epidemic thresholds",
+    "MEM intensity labels",
+    "formal epidemic start/end declarations",
+    "causal explanations absent from evidence"
+  ]
+}

@@ -24,11 +24,32 @@ from typing import Any, Literal, Mapping, Protocol, Sequence
 from ai4epi.core.context import GlobalContext
 from ai4epi.core.sections import SectionConfig, SectionRegistry
 
+from openai import OpenAI
+import httpx
+import os
+from dotenv import load_dotenv, find_dotenv
+# to override existing env.variables     
+load_dotenv(find_dotenv(usecwd=True), override=True)
+
+#found_path = find_dotenv(usecwd=True)
+#print("Found .env at:", repr(found_path))  
+#print("Current working dir:", os.getcwd())
+
+#print(os.getenv("OPENAI_API_KEY"),)
+httpx_client = httpx.Client(verify=False,trust_env=False,timeout=600)
+openai_client = OpenAI(
+    base_url=os.getenv("BASE_URL"),
+    api_key=os.getenv("OPENAI_API_KEY"),
+    timeout=7200,
+    http_client=httpx_client
+)
+
 
 JsonObject = dict[str, Any]
 ChatMessage = Mapping[str, str]
 PromptMode = Literal["research", "assisted"]
 SectionStatus = Literal["ok", "failed"]
+
 
 
 class JsonExtractionError(ValueError):
@@ -102,6 +123,12 @@ class OllamaChatBackend:
         except ImportError as exc:  # pragma: no cover - зависит от окружения установки
             raise RuntimeError("Для OllamaChatBackend требуется пакет requests.") from exc
 
+        '''headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
+        print(headers)
+
         payload: JsonObject = {
             "model": self.model,
             "messages": [dict(message) for message in messages],
@@ -118,6 +145,7 @@ class OllamaChatBackend:
 
         response = requests.post(
             f"{self.base_url.rstrip('/')}/api/chat",
+            headers=headers,
             json=payload,
             timeout=timeout if timeout is not None else self.default_timeout,
         )
@@ -126,8 +154,19 @@ class OllamaChatBackend:
         message = data.get("message") or {}
         content = message.get("content") or ""
         if not str(content).strip() and isinstance(message.get("thinking"), str):
-            content = message["thinking"]
-        return {"content": content, "raw": data}
+            content = message["thinking"]'''
+
+        response = openai_client.chat.completions.create(
+            model=self.model,
+            messages=[dict(message) for message in messages],
+            temperature=0,
+            extra_body={"reasoning_effort": "none"}
+        )
+        #print(response)
+        content = response.choices[0].message.content
+        content = content.strip('<think>\n\n</think>\n\n')
+
+        return {"content": content, "raw": response}
 
 
 @dataclass(frozen=True)

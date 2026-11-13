@@ -62,7 +62,8 @@ class BackendConfig(StrictModel):
 
     backend: str = Field(default="ollama", min_length=1)
     model: str = Field(min_length=1)
-    base_url: str = Field(default="http://localhost:11434", min_length=1)
+    base_url: str = Field(default="http://127.0.0.1:8501", min_length=1)
+    #base_url: str = Field(default="http://localhost:11434", min_length=1)
     timeout_sec: int = Field(default=180, gt=0)
 
     def make_backend(self) -> ChatBackend:

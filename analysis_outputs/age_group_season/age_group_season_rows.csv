@@ -1,0 +1,7 @@
+﻿age_group_code,age_group_label,is_total_row,season_cases,cumulative_incidence_pct,peak_week,peak_date,peak_season_position,peak_inc_per_10k,mean_weekly_inc_per_10k,peak_width_weeks,peak_width_defined,peak_width_reason,left_crossing_pos,right_crossing_pos,width_level,peak_prominence,base_level,fwhm_weeks,fwhm_defined,fwhm_reason,half_height,share_of_total_cases_pct
+total,Все население,True,129893.0,2.32,40,2026-09-28,1,44.76,38.67,,False,nonpositive_prominence,,,,0.0,,,False,nonpositive_prominence,,100.0
+age_0_2,0–2 года,False,13554.0,9.39,40,2026-09-28,1,172.96,156.47,,False,nonpositive_prominence,,,,0.0,,,False,nonpositive_prominence,,10.43
+age_3_6,3–6 лет,False,20064.0,9.74,42,2026-10-12,3,181.99,162.27,0.6,True,,2.5,3.096,180.05,3.87,178.12,0.6,True,,180.05,15.45
+age_7_14,7–14 лет,False,22630.0,4.97,40,2026-09-28,1,104.19,82.8,,False,nonpositive_prominence,,,,0.0,,,False,nonpositive_prominence,,17.42
+age_15_64,15–64 года,False,66411.0,1.76,40,2026-09-28,1,33.93,29.32,,False,nonpositive_prominence,,,,0.0,,,False,nonpositive_prominence,,51.13
+age_65_plus,65+ лет,False,7234.0,0.71,42,2026-10-12,3,13.07,11.86,1.72,True,,1.747,3.469,12.7,0.74,12.33,1.72,True,,12.7,5.57

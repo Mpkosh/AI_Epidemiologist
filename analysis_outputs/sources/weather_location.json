@@ -1,0 +1,19 @@
+{
+  "request": {
+    "city": "spb",
+    "start_date": "2019-12-30",
+    "end_date": "2026-11-08",
+    "latitude": null,
+    "longitude": null,
+    "timezone": null
+  },
+  "location": {
+    "city": "spb",
+    "query": "Saint Petersburg",
+    "latitude": 59.9311,
+    "longitude": 30.3609,
+    "timezone": "Europe/Moscow",
+    "source": "preset"
+  },
+  "source_url": "https://archive-api.open-meteo.com/v1/archive"
+}

@@ -1,0 +1,1536 @@
+{
+  "status": "ok",
+  "duration_sec": 33.981,
+  "artifacts": {
+    "merged_weekly": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\merged_weekly.csv",
+    "preprocessing.supervised_data": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\preprocessing\\supervised_data.csv",
+    "preprocessing.feature_list": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\preprocessing\\feature_list.csv",
+    "forecasting.metrics_summary": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\metrics_summary.csv",
+    "forecasting.test_predictions": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\test_predictions.csv",
+    "forecasting.forecast_next": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\forecast_next_4w.csv",
+    "forecasting.feature_list": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\feature_list.csv",
+    "forecasting.history_plus_forecast": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\history_plus_forecast_40.csv",
+    "forecasting.conformal_radii": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\conformal_radii.csv",
+    "forecasting.interval_metrics": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\forecasting\\interval_metrics.csv",
+    "forecasting.model_registry": "configs\\analysis_outputs\\forecasting\\model_registry.json",
+    "explainability.shap_global_importance": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\explainability\\shap_global_importance.csv",
+    "explainability.shap_local_values": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\explainability\\shap_local_values.csv",
+    "explainability.shap_worst_cases": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\explainability\\shap_worst_cases.csv",
+    "explainability.shap_summary": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\explainability\\shap_summary.json",
+    "epidemic_waves.bundle_json": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\epidemic_waves\\epidemic_wave_comparison.json",
+    "epidemic_waves.waves_csv": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\epidemic_waves\\epidemic_waves.csv",
+    "epidemic_waves.points_csv": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\epidemic_waves\\epidemic_wave_points.csv",
+    "epidemic_waves.latest_vs_previous_csv": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\epidemic_waves\\epidemic_wave_latest_vs_previous.csv",
+    "age_group_season.bundle_json": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\age_group_season\\age_group_season_table.json",
+    "age_group_season.rows_csv": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\age_group_season\\age_group_season_rows.csv",
+    "age_group_season.points_csv": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\age_group_season\\age_group_season_points.csv",
+    "context.context": "C:\\Users\\105\\GitHub\\AI_Epidemiologist\\configs\\analysis_outputs\\context_relevant.json"
+  },
+  "warnings": [],
+  "error_message": null,
+  "has_merged_weekly": true,
+  "has_supervised": true,
+  "has_forecast_result": true,
+  "has_shap_result": true,
+  "has_epidemic_wave_result": true,
+  "has_age_group_result": true,
+  "has_context": true,
+  "context": {
+    "origin": {
+      "origin_date": "2026-11-02",
+      "iso_year": 2026,
+      "iso_week": 45,
+      "week_start": "2026-11-02",
+      "week_end": "2026-11-08"
+    },
+    "unit": "случаев на 10 тыс. населения",
+    "per_population": 10000,
+    "current_situation": {
+      "current_week_date": "2026-11-02",
+      "current_value": 0.373,
+      "previous_value": 0.286,
+      "direction_word": "повысился",
+      "change_pct": 30.6,
+      "trend_4w_values": [
+        0.0,
+        0.0,
+        0.286,
+        0.373
+      ],
+      "trend_4w_label": "устойчивый рост",
+      "semantic": {
+        "direction_code": "increase",
+        "trend_4w_code": "increase",
+        "threshold_pct": 5.0,
+        "origin_date": "2026-11-02"
+      }
+    },
+    "epidemic_wave_comparison": {
+      "series_name": "inc_per_10k",
+      "series_label_ru": "заболеваемость на 10 тыс. населения",
+      "season_definition": "ISO weeks 40..39",
+      "width_definition": "FWHM-like on smoothed weekly curve",
+      "smoothing": {
+        "method": "centered_rolling_mean",
+        "window_weeks": 3
+      },
+      "season_labels": [
+        "2024-2025",
+        "2025-2026",
+        "2026-2027"
+      ],
+      "waves": [
+        {
+          "season_label": "2024-2025",
+          "peak_week": 12,
+          "peak_date": "2025-03-17",
+          "peak_value": 26.634,
+          "wave_status": "complete",
+          "fwhm_weeks": 9.58,
+          "fwhm_lower_bound_weeks": null,
+          "asymmetry_ratio": 0.661,
+          "season_area": 281.232,
+          "secondary_peak_ratio": 0.787,
+          "season_start_year": 2024,
+          "observed_until": "2025-09-22",
+          "n_observed_weeks": 52,
+          "half_height_value": 13.317,
+          "left_half_cross_pos": 19.231,
+          "right_half_cross_pos": 28.811,
+          "left_span_weeks": 5.769,
+          "right_span_weeks": 3.811,
+          "rise_slope_half_to_peak": 2.308,
+          "fall_slope_peak_to_half": 3.494,
+          "plot_points": [
+            {
+              "week": 40,
+              "pos": 0.0,
+              "date": "2024-09-30",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 41,
+              "pos": 1.0,
+              "date": "2024-10-07",
+              "value_raw": 0.0,
+              "value_smooth": 0.199
+            },
+            {
+              "week": 42,
+              "pos": 2.0,
+              "date": "2024-10-14",
+              "value_raw": 0.596,
+              "value_smooth": 0.199
+            },
+            {
+              "week": 43,
+              "pos": 3.0,
+              "date": "2024-10-21",
+              "value_raw": 0.0,
+              "value_smooth": 0.376
+            },
+            {
+              "week": 44,
+              "pos": 4.0,
+              "date": "2024-10-28",
+              "value_raw": 0.532,
+              "value_smooth": 0.177
+            },
+            {
+              "week": 45,
+              "pos": 5.0,
+              "date": "2024-11-04",
+              "value_raw": 0.0,
+              "value_smooth": 0.177
+            },
+            {
+              "week": 46,
+              "pos": 6.0,
+              "date": "2024-11-11",
+              "value_raw": 0.0,
+              "value_smooth": 1.047
+            },
+            {
+              "week": 47,
+              "pos": 7.0,
+              "date": "2024-11-18",
+              "value_raw": 3.141,
+              "value_smooth": 1.047
+            },
+            {
+              "week": 48,
+              "pos": 8.0,
+              "date": "2024-11-25",
+              "value_raw": 0.0,
+              "value_smooth": 1.255
+            },
+            {
+              "week": 49,
+              "pos": 9.0,
+              "date": "2024-12-02",
+              "value_raw": 0.623,
+              "value_smooth": 0.208
+            },
+            {
+              "week": 50,
+              "pos": 10.0,
+              "date": "2024-12-09",
+              "value_raw": 0.0,
+              "value_smooth": 0.405
+            },
+            {
+              "week": 51,
+              "pos": 11.0,
+              "date": "2024-12-16",
+              "value_raw": 0.593,
+              "value_smooth": 0.846
+            },
+            {
+              "week": 52,
+              "pos": 12.0,
+              "date": "2024-12-23",
+              "value_raw": 1.946,
+              "value_smooth": 1.549
+            },
+            {
+              "week": 1,
+              "pos": 14.0,
+              "date": "2024-12-30",
+              "value_raw": 2.107,
+              "value_smooth": 2.79
+            },
+            {
+              "week": 2,
+              "pos": 15.0,
+              "date": "2025-01-06",
+              "value_raw": 4.318,
+              "value_smooth": 3.39
+            },
+            {
+              "week": 3,
+              "pos": 16.0,
+              "date": "2025-01-13",
+              "value_raw": 3.744,
+              "value_smooth": 5.806
+            },
+            {
+              "week": 4,
+              "pos": 17.0,
+              "date": "2025-01-20",
+              "value_raw": 9.356,
+              "value_smooth": 7.143
+            },
+            {
+              "week": 5,
+              "pos": 18.0,
+              "date": "2025-01-27",
+              "value_raw": 8.33,
+              "value_smooth": 8.799
+            },
+            {
+              "week": 6,
+              "pos": 19.0,
+              "date": "2025-02-03",
+              "value_raw": 8.712,
+              "value_smooth": 11.985
+            },
+            {
+              "week": 7,
+              "pos": 20.0,
+              "date": "2025-02-10",
+              "value_raw": 18.911,
+              "value_smooth": 17.755
+            },
+            {
+              "week": 8,
+              "pos": 21.0,
+              "date": "2025-02-17",
+              "value_raw": 25.642,
+              "value_smooth": 20.954
+            },
+            {
+              "week": 9,
+              "pos": 22.0,
+              "date": "2025-02-24",
+              "value_raw": 18.307,
+              "value_smooth": 20.652
+            },
+            {
+              "week": 10,
+              "pos": 23.0,
+              "date": "2025-03-03",
+              "value_raw": 18.007,
+              "value_smooth": 18.872
+            },
+            {
+              "week": 11,
+              "pos": 24.0,
+              "date": "2025-03-10",
+              "value_raw": 20.301,
+              "value_smooth": 23.431
+            },
+            {
+              "week": 12,
+              "pos": 25.0,
+              "date": "2025-03-17",
+              "value_raw": 31.984,
+              "value_smooth": 26.634
+            },
+            {
+              "week": 13,
+              "pos": 26.0,
+              "date": "2025-03-24",
+              "value_raw": 27.618,
+              "value_smooth": 26.603
+            },
+            {
+              "week": 14,
+              "pos": 27.0,
+              "date": "2025-03-31",
+              "value_raw": 20.208,
+              "value_smooth": 21.894
+            },
+            {
+              "week": 15,
+              "pos": 28.0,
+              "date": "2025-04-07",
+              "value_raw": 17.855,
+              "value_smooth": 16.778
+            },
+            {
+              "week": 16,
+              "pos": 29.0,
+              "date": "2025-04-14",
+              "value_raw": 12.271,
+              "value_smooth": 12.51
+            },
+            {
+              "week": 17,
+              "pos": 30.0,
+              "date": "2025-04-21",
+              "value_raw": 7.405,
+              "value_smooth": 8.689
+            },
+            {
+              "week": 18,
+              "pos": 31.0,
+              "date": "2025-04-28",
+              "value_raw": 6.39,
+              "value_smooth": 6.155
+            },
+            {
+              "week": 19,
+              "pos": 32.0,
+              "date": "2025-05-05",
+              "value_raw": 4.672,
+              "value_smooth": 4.929
+            },
+            {
+              "week": 20,
+              "pos": 33.0,
+              "date": "2025-05-12",
+              "value_raw": 3.725,
+              "value_smooth": 3.248
+            },
+            {
+              "week": 21,
+              "pos": 34.0,
+              "date": "2025-05-19",
+              "value_raw": 1.349,
+              "value_smooth": 2.083
+            },
+            {
+              "week": 22,
+              "pos": 35.0,
+              "date": "2025-05-26",
+              "value_raw": 1.175,
+              "value_smooth": 0.963
+            },
+            {
+              "week": 23,
+              "pos": 36.0,
+              "date": "2025-06-02",
+              "value_raw": 0.366,
+              "value_smooth": 0.514
+            },
+            {
+              "week": 24,
+              "pos": 37.0,
+              "date": "2025-06-09",
+              "value_raw": 0.0,
+              "value_smooth": 0.172
+            },
+            {
+              "week": 25,
+              "pos": 38.0,
+              "date": "2025-06-16",
+              "value_raw": 0.15,
+              "value_smooth": 0.05
+            },
+            {
+              "week": 26,
+              "pos": 39.0,
+              "date": "2025-06-23",
+              "value_raw": 0.0,
+              "value_smooth": 0.05
+            },
+            {
+              "week": 27,
+              "pos": 40.0,
+              "date": "2025-06-30",
+              "value_raw": 0.0,
+              "value_smooth": 0.064
+            },
+            {
+              "week": 28,
+              "pos": 41.0,
+              "date": "2025-07-07",
+              "value_raw": 0.193,
+              "value_smooth": 0.064
+            },
+            {
+              "week": 29,
+              "pos": 42.0,
+              "date": "2025-07-14",
+              "value_raw": 0.0,
+              "value_smooth": 0.064
+            },
+            {
+              "week": 30,
+              "pos": 43.0,
+              "date": "2025-07-21",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 31,
+              "pos": 44.0,
+              "date": "2025-07-28",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 32,
+              "pos": 45.0,
+              "date": "2025-08-04",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 33,
+              "pos": 46.0,
+              "date": "2025-08-11",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 34,
+              "pos": 47.0,
+              "date": "2025-08-18",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 35,
+              "pos": 48.0,
+              "date": "2025-08-25",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 36,
+              "pos": 49.0,
+              "date": "2025-09-01",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 37,
+              "pos": 50.0,
+              "date": "2025-09-08",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 38,
+              "pos": 51.0,
+              "date": "2025-09-15",
+              "value_raw": 0.0,
+              "value_smooth": 0.234
+            },
+            {
+              "week": 39,
+              "pos": 52.0,
+              "date": "2025-09-22",
+              "value_raw": 0.702,
+              "value_smooth": 0.351
+            }
+          ]
+        },
+        {
+          "season_label": "2025-2026",
+          "peak_week": 51,
+          "peak_date": "2025-12-15",
+          "peak_value": 34.778,
+          "wave_status": "complete",
+          "fwhm_weeks": 5.207,
+          "fwhm_lower_bound_weeks": null,
+          "asymmetry_ratio": 1.139,
+          "season_area": 248.855,
+          "secondary_peak_ratio": 0.25,
+          "season_start_year": 2025,
+          "observed_until": "2026-09-21",
+          "n_observed_weeks": 52,
+          "half_height_value": 17.389,
+          "left_half_cross_pos": 8.566,
+          "right_half_cross_pos": 13.773,
+          "left_span_weeks": 2.434,
+          "right_span_weeks": 2.773,
+          "rise_slope_half_to_peak": 7.144,
+          "fall_slope_peak_to_half": 6.271,
+          "plot_points": [
+            {
+              "week": 40,
+              "pos": 0.0,
+              "date": "2025-09-29",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 41,
+              "pos": 1.0,
+              "date": "2025-10-06",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 42,
+              "pos": 2.0,
+              "date": "2025-10-13",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 43,
+              "pos": 3.0,
+              "date": "2025-10-20",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 44,
+              "pos": 4.0,
+              "date": "2025-10-27",
+              "value_raw": 0.0,
+              "value_smooth": 0.114
+            },
+            {
+              "week": 45,
+              "pos": 5.0,
+              "date": "2025-11-03",
+              "value_raw": 0.341,
+              "value_smooth": 1.599
+            },
+            {
+              "week": 46,
+              "pos": 6.0,
+              "date": "2025-11-10",
+              "value_raw": 4.455,
+              "value_smooth": 2.711
+            },
+            {
+              "week": 47,
+              "pos": 7.0,
+              "date": "2025-11-17",
+              "value_raw": 3.337,
+              "value_smooth": 6.319
+            },
+            {
+              "week": 48,
+              "pos": 8.0,
+              "date": "2025-11-24",
+              "value_raw": 11.163,
+              "value_smooth": 12.231
+            },
+            {
+              "week": 49,
+              "pos": 9.0,
+              "date": "2025-12-01",
+              "value_raw": 22.193,
+              "value_smooth": 21.345
+            },
+            {
+              "week": 50,
+              "pos": 10.0,
+              "date": "2025-12-08",
+              "value_raw": 30.68,
+              "value_smooth": 32.339
+            },
+            {
+              "week": 51,
+              "pos": 11.0,
+              "date": "2025-12-15",
+              "value_raw": 44.143,
+              "value_smooth": 34.778
+            },
+            {
+              "week": 52,
+              "pos": 12.0,
+              "date": "2025-12-22",
+              "value_raw": 29.512,
+              "value_smooth": 29.713
+            },
+            {
+              "week": 1,
+              "pos": 14.0,
+              "date": "2025-12-29",
+              "value_raw": 15.485,
+              "value_smooth": 15.814
+            },
+            {
+              "week": 2,
+              "pos": 15.0,
+              "date": "2026-01-05",
+              "value_raw": 2.446,
+              "value_smooth": 10.635
+            },
+            {
+              "week": 3,
+              "pos": 16.0,
+              "date": "2026-01-12",
+              "value_raw": 13.975,
+              "value_smooth": 8.17
+            },
+            {
+              "week": 4,
+              "pos": 17.0,
+              "date": "2026-01-19",
+              "value_raw": 8.089,
+              "value_smooth": 8.678
+            },
+            {
+              "week": 5,
+              "pos": 18.0,
+              "date": "2026-01-26",
+              "value_raw": 3.971,
+              "value_smooth": 5.491
+            },
+            {
+              "week": 6,
+              "pos": 19.0,
+              "date": "2026-02-02",
+              "value_raw": 4.414,
+              "value_smooth": 5.191
+            },
+            {
+              "week": 7,
+              "pos": 20.0,
+              "date": "2026-02-09",
+              "value_raw": 7.187,
+              "value_smooth": 6.708
+            },
+            {
+              "week": 8,
+              "pos": 21.0,
+              "date": "2026-02-16",
+              "value_raw": 8.523,
+              "value_smooth": 6.847
+            },
+            {
+              "week": 9,
+              "pos": 22.0,
+              "date": "2026-02-23",
+              "value_raw": 4.831,
+              "value_smooth": 6.406
+            },
+            {
+              "week": 10,
+              "pos": 23.0,
+              "date": "2026-03-02",
+              "value_raw": 5.863,
+              "value_smooth": 4.931
+            },
+            {
+              "week": 11,
+              "pos": 24.0,
+              "date": "2026-03-09",
+              "value_raw": 4.1,
+              "value_smooth": 4.515
+            },
+            {
+              "week": 12,
+              "pos": 25.0,
+              "date": "2026-03-16",
+              "value_raw": 3.582,
+              "value_smooth": 3.202
+            },
+            {
+              "week": 13,
+              "pos": 26.0,
+              "date": "2026-03-23",
+              "value_raw": 1.924,
+              "value_smooth": 2.45
+            },
+            {
+              "week": 14,
+              "pos": 27.0,
+              "date": "2026-03-30",
+              "value_raw": 1.845,
+              "value_smooth": 2.072
+            },
+            {
+              "week": 15,
+              "pos": 28.0,
+              "date": "2026-04-06",
+              "value_raw": 2.446,
+              "value_smooth": 2.31
+            },
+            {
+              "week": 16,
+              "pos": 29.0,
+              "date": "2026-04-13",
+              "value_raw": 2.639,
+              "value_smooth": 2.198
+            },
+            {
+              "week": 17,
+              "pos": 30.0,
+              "date": "2026-04-20",
+              "value_raw": 1.51,
+              "value_smooth": 3.485
+            },
+            {
+              "week": 18,
+              "pos": 31.0,
+              "date": "2026-04-27",
+              "value_raw": 6.306,
+              "value_smooth": 2.605
+            },
+            {
+              "week": 19,
+              "pos": 32.0,
+              "date": "2026-05-04",
+              "value_raw": 0.0,
+              "value_smooth": 2.557
+            },
+            {
+              "week": 20,
+              "pos": 33.0,
+              "date": "2026-05-11",
+              "value_raw": 1.365,
+              "value_smooth": 0.585
+            },
+            {
+              "week": 21,
+              "pos": 34.0,
+              "date": "2026-05-18",
+              "value_raw": 0.391,
+              "value_smooth": 0.714
+            },
+            {
+              "week": 22,
+              "pos": 35.0,
+              "date": "2026-05-25",
+              "value_raw": 0.386,
+              "value_smooth": 0.314
+            },
+            {
+              "week": 23,
+              "pos": 36.0,
+              "date": "2026-06-01",
+              "value_raw": 0.166,
+              "value_smooth": 0.272
+            },
+            {
+              "week": 24,
+              "pos": 37.0,
+              "date": "2026-06-08",
+              "value_raw": 0.263,
+              "value_smooth": 0.324
+            },
+            {
+              "week": 25,
+              "pos": 38.0,
+              "date": "2026-06-15",
+              "value_raw": 0.543,
+              "value_smooth": 0.269
+            },
+            {
+              "week": 26,
+              "pos": 39.0,
+              "date": "2026-06-22",
+              "value_raw": 0.0,
+              "value_smooth": 0.181
+            },
+            {
+              "week": 27,
+              "pos": 40.0,
+              "date": "2026-06-29",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 28,
+              "pos": 41.0,
+              "date": "2026-07-06",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 29,
+              "pos": 42.0,
+              "date": "2026-07-13",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 30,
+              "pos": 43.0,
+              "date": "2026-07-20",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 31,
+              "pos": 44.0,
+              "date": "2026-07-27",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 32,
+              "pos": 45.0,
+              "date": "2026-08-03",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 33,
+              "pos": 46.0,
+              "date": "2026-08-10",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            },
+            {
+              "week": 34,
+              "pos": 47.0,
+              "date": "2026-08-17",
+              "value_raw": 0.0,
+              "value_smooth": 0.063
+            },
+            {
+              "week": 35,
+              "pos": 48.0,
+              "date": "2026-08-24",
+              "value_raw": 0.189,
+              "value_smooth": 0.155
+            },
+            {
+              "week": 36,
+              "pos": 49.0,
+              "date": "2026-08-31",
+              "value_raw": 0.275,
+              "value_smooth": 0.261
+            },
+            {
+              "week": 37,
+              "pos": 50.0,
+              "date": "2026-09-07",
+              "value_raw": 0.318,
+              "value_smooth": 0.198
+            },
+            {
+              "week": 38,
+              "pos": 51.0,
+              "date": "2026-09-14",
+              "value_raw": 0.0,
+              "value_smooth": 0.106
+            },
+            {
+              "week": 39,
+              "pos": 52.0,
+              "date": "2026-09-21",
+              "value_raw": 0.0,
+              "value_smooth": 0.0
+            }
+          ]
+        },
+        {
+          "season_label": "2026-2027",
+          "peak_week": 45,
+          "peak_date": "2026-11-02",
+          "peak_value": 0.33,
+          "wave_status": "right_censored",
+          "fwhm_weeks": null,
+          "fwhm_lower_bound_weeks": 1.441,
+          "asymmetry_ratio": null,
+          "season_area": 1.118,
+          "secondary_peak_ratio": 0.464,
+          "season_start_year": 2026,
+          "observed_until": "2026-11-02",
+          "n_observed_weeks": 6,
+          "half_height_value": 0.165,
+          "left_half_cross_pos": 3.559,
+          "right_half_cross_pos": null,
+          "left_span_weeks": 1.441,
+          "right_span_weeks": null,
+          "rise_slope_half_to_peak": 0.114,
+          "fall_slope_peak_to_half": null,
+          "plot_points": [
+            {
+              "week": 40,
+              "pos": 0.0,
+              "date": "2026-09-28",
+              "value_raw": 0.0,
+              "value_smooth": 0.23
+            },
+            {
+              "week": 41,
+              "pos": 1.0,
+              "date": "2026-10-05",
+              "value_raw": 0.459,
+              "value_smooth": 0.153
+            },
+            {
+              "week": 42,
+              "pos": 2.0,
+              "date": "2026-10-12",
+              "value_raw": 0.0,
+              "value_smooth": 0.153
+            },
+            {
+              "week": 43,
+              "pos": 3.0,
+              "date": "2026-10-19",
+              "value_raw": 0.0,
+              "value_smooth": 0.095
+            },
+            {
+              "week": 44,
+              "pos": 4.0,
+              "date": "2026-10-26",
+              "value_raw": 0.286,
+              "value_smooth": 0.22
+            },
+            {
+              "week": 45,
+              "pos": 5.0,
+              "date": "2026-11-02",
+              "value_raw": 0.373,
+              "value_smooth": 0.33
+            }
+          ]
+        }
+      ],
+      "latest_vs_previous": [
+        {
+          "latest_season": "2026-2027",
+          "previous_season": "2024-2025",
+          "peak_diff_abs": -26.304,
+          "peak_diff_pct": -98.8,
+          "peak_week_diff": 33,
+          "season_area_diff_pct": -99.6,
+          "width_diff_weeks": null,
+          "latest_width_censored": true
+        },
+        {
+          "latest_season": "2026-2027",
+          "previous_season": "2025-2026",
+          "peak_diff_abs": -34.448,
+          "peak_diff_pct": -99.1,
+          "peak_week_diff": -6,
+          "season_area_diff_pct": -99.6,
+          "width_diff_weeks": null,
+          "latest_width_censored": true
+        }
+      ],
+      "peak_ranking": [
+        {
+          "season_label": "2025-2026",
+          "peak_value": 34.778
+        },
+        {
+          "season_label": "2024-2025",
+          "peak_value": 26.634
+        },
+        {
+          "season_label": "2026-2027",
+          "peak_value": 0.33
+        }
+      ],
+      "width_ranking_complete": [
+        {
+          "season_label": "2024-2025",
+          "fwhm_weeks": 9.58
+        },
+        {
+          "season_label": "2025-2026",
+          "fwhm_weeks": 5.207
+        }
+      ],
+      "latest_wave_status": "right_censored",
+      "allowed_claims": [
+        "peak height comparison",
+        "peak timing comparison",
+        "FWHM width comparison when complete",
+        "right-censored width caveat for incomplete latest season",
+        "asymmetry comparison when complete",
+        "season burden comparison"
+      ],
+      "forbidden_claims": [
+        "epidemic thresholds",
+        "MEM intensity labels",
+        "formal epidemic start/end declarations",
+        "causal explanations absent from evidence"
+      ],
+      "comparison_mode": "three_last_seasons"
+    },
+    "forecast": {
+      "horizons": [
+        {
+          "horizon_weeks": 1,
+          "target_date": "2026-11-09",
+          "target_iso_week": 46,
+          "point_forecast": 0.197,
+          "q_lo": 0.0,
+          "q_hi": 8.398,
+          "interval_width": 8.398,
+          "pi_width": 8.398
+        },
+        {
+          "horizon_weeks": 2,
+          "target_date": "2026-11-16",
+          "target_iso_week": 47,
+          "point_forecast": 1.032,
+          "q_lo": 0.0,
+          "q_hi": 12.794,
+          "interval_width": 12.794,
+          "pi_width": 12.794
+        },
+        {
+          "horizon_weeks": 3,
+          "target_date": "2026-11-23",
+          "target_iso_week": 48,
+          "point_forecast": 3.057,
+          "q_lo": 0.0,
+          "q_hi": 16.148,
+          "interval_width": 16.148,
+          "pi_width": 16.148
+        },
+        {
+          "horizon_weeks": 4,
+          "target_date": "2026-11-30",
+          "target_iso_week": 49,
+          "point_forecast": 6.511,
+          "q_lo": 0.0,
+          "q_hi": 20.837,
+          "interval_width": 20.837,
+          "pi_width": 20.837
+        }
+      ],
+      "trend_label": "устойчивый рост",
+      "dynamics_description": "центральная траектория указывает на преимущественный рост с 0.20 до 6.51",
+      "slope_per_week": 2.0968,
+      "uncertainty_label": "очень высокая неопределённость",
+      "relative_uncertainty_pct": 538.8,
+      "max_interval_width": 20.837,
+      "semantic": {
+        "shape_code": "increase",
+        "forecast_shape_code": "increase",
+        "uncertainty_level_code": "very_high",
+        "has_intermediate_rise": true,
+        "has_intermediate_decline": false,
+        "point_forecast_values": [
+          0.197,
+          1.032,
+          3.057,
+          6.511
+        ],
+        "interval_method": "conformal",
+        "nominal_coverage": 0.8
+      }
+    },
+    "shap_summary": {
+      "by_horizon": {
+        "1": [
+          {
+            "название": "заболеваемость предыдущей недели",
+            "сила_влияния": 0.647,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "заболеваемость 2 недели назад",
+            "сила_влияния": 0.397,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "минимальная температура воздуха",
+            "сила_влияния": 0.339,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "изменение заболеваемости за 4 недели",
+            "сила_влияния": 0.311,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "волатильность заболеваемости (9 нед.)",
+            "сила_влияния": 0.263,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          }
+        ],
+        "2": [
+          {
+            "название": "заболеваемость предыдущей недели",
+            "сила_влияния": 0.823,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "заболеваемость 2 недели назад",
+            "сила_влияния": 0.437,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "изменение заболеваемости за 4 недели",
+            "сила_влияния": 0.299,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "сезонный фактор (sin, годовой цикл)",
+            "сила_влияния": 0.254,
+            "направление": "направление влияния НЕУСТОЙЧИВОЕ — в разных эпидемических ситуациях этот фактор может как повышать, так и понижать прогноз. Важна сила влияния, а не знак",
+            "направление_надёжное": false
+          },
+          {
+            "название": "минимальная температура воздуха",
+            "сила_влияния": 0.247,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          }
+        ],
+        "3": [
+          {
+            "название": "заболеваемость предыдущей недели",
+            "сила_влияния": 0.703,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "сезонный фактор (cos, годовой цикл)",
+            "сила_влияния": 0.417,
+            "направление": "направление влияния НЕУСТОЙЧИВОЕ — в разных эпидемических ситуациях этот фактор может как повышать, так и понижать прогноз. Важна сила влияния, а не знак",
+            "направление_надёжное": false
+          },
+          {
+            "название": "скользящая средняя температура (4 нед.)",
+            "сила_влияния": 0.331,
+            "направление": "направление влияния НЕУСТОЙЧИВОЕ — в разных эпидемических ситуациях этот фактор может как повышать, так и понижать прогноз. Важна сила влияния, а не знак",
+            "направление_надёжное": false
+          },
+          {
+            "название": "изменение заболеваемости за 4 недели",
+            "сила_влияния": 0.319,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "заболеваемость 2 недели назад",
+            "сила_влияния": 0.289,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          }
+        ],
+        "4": [
+          {
+            "название": "сезонный фактор (cos, годовой цикл)",
+            "сила_влияния": 0.587,
+            "направление": "направление влияния НЕУСТОЙЧИВОЕ — в разных эпидемических ситуациях этот фактор может как повышать, так и понижать прогноз. Важна сила влияния, а не знак",
+            "направление_надёжное": false
+          },
+          {
+            "название": "заболеваемость предыдущей недели",
+            "сила_влияния": 0.408,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "изменение заболеваемости за 4 недели",
+            "сила_влияния": 0.335,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво СНИЖАЕТСЯ",
+            "направление_надёжное": true
+          },
+          {
+            "название": "сезонный фактор (sin, годовой цикл)",
+            "сила_влияния": 0.326,
+            "направление": "направление влияния НЕУСТОЙЧИВОЕ — в разных эпидемических ситуациях этот фактор может как повышать, так и понижать прогноз. Важна сила влияния, а не знак",
+            "направление_надёжное": false
+          },
+          {
+            "название": "заболеваемость 2 недели назад",
+            "сила_влияния": 0.242,
+            "направление": "при увеличении этого фактора прогноз заболеваемости устойчиво РАСТЁТ",
+            "направление_надёжное": true
+          }
+        ]
+      },
+      "key_insight": "На коротком горизонте (1 нед.) доминируют лаговые признаки заболеваемости (инерция эпидпроцесса). На длинном горизонте (4 нед.) возрастает роль температурных и сезонных факторов.",
+      "semantic": {
+        "h1_dominant_group": "lags",
+        "h4_dominant_group": "temp_seasonality",
+        "transition_pattern": "lags_to_temp_seasonality",
+        "h1_top_features": [
+          "y_lag0",
+          "y_lag1",
+          "temp_min"
+        ],
+        "h4_top_features": [
+          "cos_w1",
+          "y_lag0",
+          "y_diff4"
+        ],
+        "h1_unreliable_direction_features": [],
+        "h4_unreliable_direction_features": [
+          "сезонный фактор (cos, годовой цикл)",
+          "сезонный фактор (sin, годовой цикл)"
+        ],
+        "h1_top_feature_names": [
+          "заболеваемость предыдущей недели",
+          "заболеваемость 2 недели назад",
+          "минимальная температура воздуха"
+        ],
+        "h4_top_feature_names": [
+          "сезонный фактор (cos, годовой цикл)",
+          "заболеваемость предыдущей недели",
+          "изменение заболеваемости за 4 недели"
+        ],
+        "h1_top_feature_ids": [
+          "y_lag0",
+          "y_lag1",
+          "temp_min"
+        ],
+        "h4_top_feature_ids": [
+          "cos_w1",
+          "y_lag0",
+          "y_diff4"
+        ]
+      }
+    },
+    "model_quality": {
+      "metrics": [
+        {
+          "horizon_weeks": 1,
+          "mae": 2.7962,
+          "rmse": 5.4655,
+          "r2": 0.6148,
+          "n_test": 52
+        },
+        {
+          "horizon_weeks": 2,
+          "mae": 2.7792,
+          "rmse": 5.9857,
+          "r2": 0.5379,
+          "n_test": 52
+        },
+        {
+          "horizon_weeks": 3,
+          "mae": 3.09,
+          "rmse": 5.7395,
+          "r2": 0.5749,
+          "n_test": 52
+        },
+        {
+          "horizon_weeks": 4,
+          "mae": 3.2018,
+          "rmse": 6.1608,
+          "r2": 0.5101,
+          "n_test": 52
+        }
+      ],
+      "error_stats_h1": {
+        "median_error_h1": 0.6445,
+        "p75_error_h1": 3.3239,
+        "max_error_h1": 24.0635,
+        "mean_error_h1": 2.7962
+      },
+      "worst_case_pattern": "Ошибки распределены между недооценкой и переоценкой (недооценка: 60.0%). Пиковые ошибки в декабрь, февраль.",
+      "semantic": {
+        "worst_case_regime": "mixed_errors",
+        "peak_error_months": [
+          "декабрь",
+          "февраль"
+        ],
+        "peak_error_month_numbers": [
+          12,
+          2
+        ],
+        "pct_underestimated_worst_cases": 60.0,
+        "test_weeks": 52,
+        "overall": {
+          "r2_overall": 0.5594,
+          "rmse_overall": 5.8438,
+          "mae_overall": 2.9668
+        }
+      }
+    },
+    "model_info": {
+      "family_ru": "градиентный бустинг на гистограммах",
+      "strategy_ru": "прямая многошаговая (отдельная модель для каждого горизонта прогноза)",
+      "task_type_ru": "многошаговый недельный прогноз заболеваемости",
+      "forecast_target_ru": "уровень заболеваемости гриппом и ОРВИ",
+      "horizons": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "feature_groups": [
+        "target_lags",
+        "target_rolling_stats",
+        "epidemic_dynamics",
+        "fourier_seasonality",
+        "temperature_lags",
+        "temperature_rolling_stats",
+        "calendar_features"
+      ],
+      "feature_groups_ru": {
+        "target_lags": "лаги заболеваемости",
+        "target_rolling_stats": "скользящие статистики заболеваемости",
+        "epidemic_dynamics": "показатели эпидемической динамики",
+        "fourier_seasonality": "сезонные гармоники (ряды Фурье)",
+        "temperature_lags": "лаги температуры воздуха",
+        "temperature_rolling_stats": "скользящие статистики температуры",
+        "calendar_features": "календарные признаки (номер недели)"
+      },
+      "calibration_start_year": 2020,
+      "calibration_data_description": "данные о зарегистрированных случаях заболеваний гриппом и ОРВИ и данные лабораторной диагностики гриппа (ПЦР)",
+      "semantic": {
+        "family_code": "hist_gradient_boosting_regressor",
+        "family_sklearn_name": "HistGradientBoostingRegressor",
+        "strategy_code": "direct_multi_step",
+        "task_type_code": "multi_horizon_weekly_forecast",
+        "target_variable": "inc_per_10k",
+        "target_transform": "none",
+        "interval_method": "conformal",
+        "n_features": 45,
+        "n_point_models": 4
+      },
+      "family": "HistGradientBoostingRegressor",
+      "strategy": "direct_multi_step",
+      "task_type": "multi_horizon_weekly_forecast",
+      "n_point_models": 4
+    },
+    "age_group_season": {
+      "season_label": "2026-2027",
+      "metric_label_ru": "зарегистрированная заболеваемость ОРВИ по возрастным группам",
+      "width_definition": "Ширина главного пика по сглаженному недельному ряду на уровне 50% prominence",
+      "rows": [
+        {
+          "age_group_code": "total",
+          "age_group_label": "Все население",
+          "is_total_row": true,
+          "season_cases": 129893.0,
+          "cumulative_incidence_pct": 2.32,
+          "peak_week": 40,
+          "peak_date": "2026-09-28",
+          "peak_season_position": 1.0,
+          "peak_inc_per_10k": 44.76,
+          "mean_weekly_inc_per_10k": 38.67,
+          "peak_width_weeks": null,
+          "peak_width_defined": false,
+          "peak_width_reason": "nonpositive_prominence",
+          "width_level": null,
+          "share_of_total_cases_pct": 100.0,
+          "left_crossing_pos": null,
+          "right_crossing_pos": null,
+          "peak_prominence": 0.0,
+          "base_level": null,
+          "fwhm_weeks": null,
+          "fwhm_defined": false,
+          "fwhm_reason": "nonpositive_prominence",
+          "half_height": null
+        },
+        {
+          "age_group_code": "age_0_2",
+          "age_group_label": "0–2 года",
+          "is_total_row": false,
+          "season_cases": 13554.0,
+          "cumulative_incidence_pct": 9.39,
+          "peak_week": 40,
+          "peak_date": "2026-09-28",
+          "peak_season_position": 1.0,
+          "peak_inc_per_10k": 172.96,
+          "mean_weekly_inc_per_10k": 156.47,
+          "peak_width_weeks": null,
+          "peak_width_defined": false,
+          "peak_width_reason": "nonpositive_prominence",
+          "width_level": null,
+          "share_of_total_cases_pct": 10.43,
+          "left_crossing_pos": null,
+          "right_crossing_pos": null,
+          "peak_prominence": 0.0,
+          "base_level": null,
+          "fwhm_weeks": null,
+          "fwhm_defined": false,
+          "fwhm_reason": "nonpositive_prominence",
+          "half_height": null
+        },
+        {
+          "age_group_code": "age_3_6",
+          "age_group_label": "3–6 лет",
+          "is_total_row": false,
+          "season_cases": 20064.0,
+          "cumulative_incidence_pct": 9.74,
+          "peak_week": 42,
+          "peak_date": "2026-10-12",
+          "peak_season_position": 3.0,
+          "peak_inc_per_10k": 181.99,
+          "mean_weekly_inc_per_10k": 162.27,
+          "peak_width_weeks": 0.6,
+          "peak_width_defined": true,
+          "peak_width_reason": null,
+          "width_level": 180.05,
+          "share_of_total_cases_pct": 15.45,
+          "left_crossing_pos": 2.5,
+          "right_crossing_pos": 3.096,
+          "peak_prominence": 3.87,
+          "base_level": 178.12,
+          "fwhm_weeks": 0.6,
+          "fwhm_defined": true,
+          "fwhm_reason": null,
+          "half_height": 180.05
+        },
+        {
+          "age_group_code": "age_7_14",
+          "age_group_label": "7–14 лет",
+          "is_total_row": false,
+          "season_cases": 22630.0,
+          "cumulative_incidence_pct": 4.97,
+          "peak_week": 40,
+          "peak_date": "2026-09-28",
+          "peak_season_position": 1.0,
+          "peak_inc_per_10k": 104.19,
+          "mean_weekly_inc_per_10k": 82.8,
+          "peak_width_weeks": null,
+          "peak_width_defined": false,
+          "peak_width_reason": "nonpositive_prominence",
+          "width_level": null,
+          "share_of_total_cases_pct": 17.42,
+          "left_crossing_pos": null,
+          "right_crossing_pos": null,
+          "peak_prominence": 0.0,
+          "base_level": null,
+          "fwhm_weeks": null,
+          "fwhm_defined": false,
+          "fwhm_reason": "nonpositive_prominence",
+          "half_height": null
+        },
+        {
+          "age_group_code": "age_15_64",
+          "age_group_label": "15–64 года",
+          "is_total_row": false,
+          "season_cases": 66411.0,
+          "cumulative_incidence_pct": 1.76,
+          "peak_week": 40,
+          "peak_date": "2026-09-28",
+          "peak_season_position": 1.0,
+          "peak_inc_per_10k": 33.93,
+          "mean_weekly_inc_per_10k": 29.32,
+          "peak_width_weeks": null,
+          "peak_width_defined": false,
+          "peak_width_reason": "nonpositive_prominence",
+          "width_level": null,
+          "share_of_total_cases_pct": 51.13,
+          "left_crossing_pos": null,
+          "right_crossing_pos": null,
+          "peak_prominence": 0.0,
+          "base_level": null,
+          "fwhm_weeks": null,
+          "fwhm_defined": false,
+          "fwhm_reason": "nonpositive_prominence",
+          "half_height": null
+        },
+        {
+          "age_group_code": "age_65_plus",
+          "age_group_label": "65+ лет",
+          "is_total_row": false,
+          "season_cases": 7234.0,
+          "cumulative_incidence_pct": 0.71,
+          "peak_week": 42,
+          "peak_date": "2026-10-12",
+          "peak_season_position": 3.0,
+          "peak_inc_per_10k": 13.07,
+          "mean_weekly_inc_per_10k": 11.86,
+          "peak_width_weeks": 1.72,
+          "peak_width_defined": true,
+          "peak_width_reason": null,
+          "width_level": 12.7,
+          "share_of_total_cases_pct": 5.57,
+          "left_crossing_pos": 1.747,
+          "right_crossing_pos": 3.469,
+          "peak_prominence": 0.74,
+          "base_level": 12.33,
+          "fwhm_weeks": 1.72,
+          "fwhm_defined": true,
+          "fwhm_reason": null,
+          "half_height": 12.7
+        }
+      ],
+      "derived_findings": {
+        "highest_peak_group": {
+          "age_group_code": "age_3_6",
+          "age_group_label": "3–6 лет",
+          "peak_inc_per_10k": 181.99,
+          "peak_week": 42,
+          "peak_date": "2026-10-12"
+        },
+        "largest_cumulative_incidence_group": {
+          "age_group_code": "age_3_6",
+          "age_group_label": "3–6 лет",
+          "cumulative_incidence_pct": 9.74
+        },
+        "widest_wave_group": {
+          "age_group_code": "age_65_plus",
+          "age_group_label": "65+ лет",
+          "peak_width_weeks": 1.72
+        },
+        "latest_peak_group": null,
+        "smallest_share_group": {
+          "age_group_code": "age_65_plus",
+          "age_group_label": "65+ лет",
+          "share_of_total_cases_pct": 5.57
+        }
+      },
+      "peak_width_undefined_note": "Примечание. Знак «—» означает, что ширина главного пика на уровне 50% prominence не определяется по сглаженному ряду текущего сезона.",
+      "comparison_scope_note": "Сравнительные выводы о ширине и времени пика относятся только к возрастным группам и не включают строку «Все население».",
+      "semantic": {
+        "age_group_codes": {
+          "total": "всё население (агрегат, не возрастная группа)",
+          "age_0_2": "дети 0–2 года",
+          "age_3_6": "дети 3–6 лет",
+          "age_7_14": "дети 7–14 лет",
+          "age_15_64": "лица 15–64 года",
+          "age_65_plus": "лица 65 лет и старше"
+        },
+        "is_total_row_semantics": "Строка «Все население» — агрегат по популяции и не считается возрастной группой в сравнительных формулировках narrator.",
+        "highest_peak_group_code": "age_3_6",
+        "largest_cumulative_incidence_group_code": "age_3_6",
+        "widest_wave_group_code": "age_65_plus",
+        "latest_peak_group_code": null
+      },
+      "season_start_year": 2026,
+      "season_definition": "эпидемический сезон с 40-й недели по 39-ю неделю следующего года",
+      "source_semantics": "Возрастной раздел относится к зарегистрированным случаям ARI/ОРВИ и не тождественен модельной цели inc_per_10k.",
+      "smooth_window_weeks": 3,
+      "fwhm_undefined_note": "Примечание. Знак «—» означает, что ширина главного пика на уровне 50% prominence не определяется по сглаженному ряду текущего сезона."
+    }
+  }
+}

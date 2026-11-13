@@ -1,0 +1,6 @@
+﻿alpha,avg_width,coverage,horizon_weeks,method,nominal_coverage,section,stage
+0.2,11.443576435707332,0.8846153846153846,1,split_conformal_absolute_residual,0.8,per_h,test_eval_model
+0.2,15.66509298234834,0.9615384615384616,2,split_conformal_absolute_residual,0.8,per_h,test_eval_model
+0.2,17.28812570223489,0.9615384615384616,3,split_conformal_absolute_residual,0.8,per_h,test_eval_model
+0.2,18.371814483418078,0.9423076923076923,4,split_conformal_absolute_residual,0.8,per_h,test_eval_model
+0.2,15.69215240092716,0.9375,all,split_conformal_absolute_residual,0.8,overall,test_eval_model

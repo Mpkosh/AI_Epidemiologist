@@ -1,0 +1,195 @@
+{
+  "context_path": "analysis_outputs\\context_relevant.json",
+  "registry_path": null,
+  "output": {
+    "output_dir": "outputs",
+    "base_bulletin_json_filename": "bulletin_base.json",
+    "base_bulletin_markdown_filename": "bulletin_base.md",
+    "edited_bulletin_json_filename": "bulletin_edited.json",
+    "edited_bulletin_markdown_filename": "bulletin_edited.md",
+    "narration_results_filename": "narration_results.json",
+    "editor_run_filename": "editor_run.json",
+    "run_report_filename": "pipeline_run.json",
+    "save_base_bulletin_json": true,
+    "save_base_bulletin_markdown": true,
+    "save_edited_bulletin_json": true,
+    "save_edited_bulletin_markdown": true,
+    "save_narration_results": true,
+    "save_editor_run": true,
+    "save_run_report": true,
+    "markdown_include_metadata": true
+  },
+  "llm": {
+    "narrator": {
+      "backend": "ollama",
+      "model": "models/Qwen3.6-27B-UD-Q4_K_XL.gguf",
+      "base_url": "http://127.0.0.1:8501",
+      "timeout_sec": 180
+    },
+    "editor": null,
+    "evaluator": null
+  },
+  "narrator_settings": {
+    "prompt_mode": "research",
+    "think": false,
+    "request_timeout_sec": null,
+    "raw_preview_chars": 800,
+    "attempts": [
+      {
+        "label": "structured_output",
+        "temperature": 0.0,
+        "use_schema_format": true
+      },
+      {
+        "label": "repair",
+        "temperature": 0.0,
+        "use_schema_format": true
+      },
+      {
+        "label": "no_format",
+        "temperature": 0.0,
+        "use_schema_format": false
+      }
+    ]
+  },
+  "pipeline_settings": {
+    "validate_registry_against_context": true,
+    "fail_fast": false,
+    "require_complete_bulletin": true,
+    "validate_section_payloads": true,
+    "run_runtime_checks": true,
+    "run_editor": true,
+    "require_editor_success": false,
+    "run_runtime_checks_after_edit": true
+  },
+  "editor_settings": {
+    "temperature": 0.0,
+    "max_tokens": 700,
+    "timeout": null,
+    "validate_section_schema": true,
+    "run_runtime_checks_after_edit": false,
+    "include_full_section_evidence": true,
+    "fail_on_field_errors": false
+  },
+  "runtime_checks": {
+    "numeric_tolerance_pct": 1.5,
+    "min_section_words": 15,
+    "high_uncertainty_pct_threshold": 80.0,
+    "check_markdown_artifacts": true,
+    "check_text_quality": true,
+    "check_numeric_anchors": true,
+    "check_logic_rules": true,
+    "allowed_latin_terms": [
+      "AIC",
+      "API",
+      "CI",
+      "CSV",
+      "FWHM",
+      "GBDT",
+      "ISO",
+      "JSON",
+      "LightGBM",
+      "MAE",
+      "MAPE",
+      "PDF",
+      "Pydantic",
+      "RMSE",
+      "R2",
+      "R²",
+      "SHAP",
+      "XGBoost",
+      "h",
+      "q"
+    ],
+    "absolute_certainty_phrases": [
+      "гарантированно",
+      "несомненно",
+      "безусловно",
+      "однозначно",
+      "точно произойдет",
+      "точно произойдёт",
+      "обязательно произойдет",
+      "обязательно произойдёт",
+      "определенно приведет",
+      "определённо приведёт"
+    ],
+    "adverse_scenario_markers": [
+      "неблагоприятн",
+      "негативн",
+      "пессимистичн",
+      "худш"
+    ],
+    "low_interval_markers": [
+      "нулев",
+      "нижн",
+      "минимальн"
+    ],
+    "high_interval_markers": [
+      "верхн",
+      "высок",
+      "максимальн"
+    ],
+    "decline_markers": [
+      "снижени",
+      "уменьшени",
+      "падени",
+      "сокращени"
+    ],
+    "growth_markers": [
+      "рост",
+      "повышени",
+      "увеличени",
+      "возрастани"
+    ],
+    "trend_qualifier_markers": [
+      "затем",
+      "однако",
+      "после",
+      "сменил",
+      "сменяет",
+      "колебан",
+      "временн",
+      "впоследств"
+    ],
+    "prose_section_ids": [
+      "current_situation",
+      "epidemic_wave_comparison",
+      "age_group_season_overview",
+      "forecast_risks",
+      "shap_interpretation",
+      "model_quality",
+      "model_description",
+      "figure_caption",
+      "forecast_figure_caption",
+      "wave_figure_caption"
+    ]
+  },
+  "evaluation": {
+    "enabled": false,
+    "bulletin_kind": "final",
+    "output_filename": "evaluation_report.json",
+    "numeric_tolerance_pct": 1.5,
+    "weights": {
+      "numeric": 0.26666666666666666,
+      "factual": 0.26666666666666666,
+      "logic": 0.0,
+      "style": 0.2,
+      "tautology": 0.06666666666666667,
+      "grammar": 0.1,
+      "orthotypography": 0.06666666666666667,
+      "water": 0.03333333333333333
+    },
+    "enabled_evaluators": [
+      "numeric",
+      "factual",
+      "tautology",
+      "grammar",
+      "orthotypography",
+      "style"
+    ],
+    "judge_temperature": 0.0,
+    "request_timeout_sec": null,
+    "raw_preview_chars": 500
+  },
+  "metadata_extra": {}
+}

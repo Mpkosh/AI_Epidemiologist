@@ -1,0 +1,5 @@
+﻿horizon_weeks,radius,alpha,nominal_coverage,method
+1,8.200661621351669,0.2,0.8,split_conformal_absolute_residual
+2,11.761895475305908,0.2,0.8,split_conformal_absolute_residual
+3,13.090533625586627,0.2,0.8,split_conformal_absolute_residual
+4,14.325185922932766,0.2,0.8,split_conformal_absolute_residual

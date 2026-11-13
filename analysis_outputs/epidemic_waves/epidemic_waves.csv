@@ -1,0 +1,4 @@
+﻿season_start_year,season_label,wave_status,observed_until,n_observed_weeks,peak_week,peak_date,peak_value,half_height_value,left_half_cross_pos,right_half_cross_pos,fwhm_weeks,fwhm_lower_bound_weeks,left_span_weeks,right_span_weeks,asymmetry_ratio,season_area,rise_slope_half_to_peak,fall_slope_peak_to_half,secondary_peak_ratio
+2024,2024-2025,complete,2025-09-22,52,12,2025-03-17,26.634,13.317,19.231,28.811,9.58,,5.769,3.811,0.661,281.232,2.308,3.494,0.787
+2025,2025-2026,complete,2026-09-21,52,51,2025-12-15,34.778,17.389,8.566,13.773,5.207,,2.434,2.773,1.139,248.855,7.144,6.271,0.25
+2026,2026-2027,right_censored,2026-11-02,6,45,2026-11-02,0.33,0.165,3.559,,,1.441,1.441,,,1.118,0.114,,0.464
